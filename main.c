@@ -13,7 +13,7 @@ void leNomeArquivoEntrada(char* nomeArquivo){
 }
 
 int abreArquivoAEntrada(FILE* pont_arq, char* nomeArquivo){
-    pont_arq = fopen(nomeArquivo, "r");
+    pont_arq = fopen(&nomeArquivo, "r");
 
   //testando se o arquivo foi realmente criado
 	if(pont_arq == NULL)
